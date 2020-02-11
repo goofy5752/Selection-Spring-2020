@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brothers in the Bar", "Brothers in the Bar\Brothers in the Bar.csproj", "{42358A54-22E4-4BC7-8D55-C00996961984}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Market Store", "Market Store\Market Store.csproj", "{F453B084-5C1E-42D0-ACAB-4D2BFE41880D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42358A54-22E4-4BC7-8D55-C00996961984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42358A54-22E4-4BC7-8D55-C00996961984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42358A54-22E4-4BC7-8D55-C00996961984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42358A54-22E4-4BC7-8D55-C00996961984}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F453B084-5C1E-42D0-ACAB-4D2BFE41880D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F453B084-5C1E-42D0-ACAB-4D2BFE41880D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F453B084-5C1E-42D0-ACAB-4D2BFE41880D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F453B084-5C1E-42D0-ACAB-4D2BFE41880D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65D43168-E5CC-459C-997D-53348B1725D9}
+	EndGlobalSection
+EndGlobal

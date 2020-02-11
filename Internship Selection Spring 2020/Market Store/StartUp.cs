@@ -1,8 +1,6 @@
-﻿using System.Collections.Generic;
-
-namespace Market_Store
+﻿namespace Market_Store
 {
-    using System;
+    using System.Collections.Generic;
 
     class StartUp
     {

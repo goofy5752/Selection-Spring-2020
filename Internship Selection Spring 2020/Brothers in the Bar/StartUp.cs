@@ -22,6 +22,8 @@
             Console.WriteLine(BrothersInTheBarVariant2(glasses2));
         }
 
+        #region Variant1
+
         private static int BrothersInTheBarVariant1(List<int> glasses)
         {
             //initialize the counter for consecutive integers
@@ -50,6 +52,10 @@
 
             return consecutiveGlasses;
         }
+
+        #endregion
+
+        #region Variant2
 
         private static int BrothersInTheBarVariant2(List<int> glasses)
         {
@@ -88,5 +94,7 @@
 
             return consecutiveGlasses;
         }
+
+        #endregion
     }
 }

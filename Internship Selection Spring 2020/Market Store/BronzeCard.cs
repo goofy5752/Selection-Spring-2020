@@ -8,7 +8,7 @@
 
         protected override void CalculateDiscountRate()
         {
-            if (this.TurnOver < 100 && this.TurnOver > 0)
+            if (this.TurnOver < 100 && this.TurnOver >= 0)
             {
                 this.DiscountRate = 0;
             }

@@ -8,7 +8,7 @@
 
         protected override void CalculateDiscountRate()
         {
-            this.DiscountRate = this.DiscountRate > 300 ? 0.035 : 0.02;
+            this.DiscountRate = this.TurnOver > 300 ? 0.035 : 0.02;
         }
     }
 }

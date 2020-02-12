@@ -6,8 +6,8 @@
     {
         static void Main(string[] args)
         {
-            var bronzeCard = new BronzeCard(100, 150);
-            var silverCard = new SilverCard(300, 850);
+            var bronzeCard = new BronzeCard(0, 150);
+            var silverCard = new SilverCard(600, 850);
             var goldCard = new GoldCard(1500, 1300);
 
             var cards = new List<BaseCard>()

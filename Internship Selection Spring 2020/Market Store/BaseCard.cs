@@ -24,7 +24,7 @@ namespace Market_Store
 
         protected abstract void CalculateDiscountRate();
 
-        protected virtual void CalculateDiscount()
+        private void CalculateDiscount()
         {
             Discount = PurchaseValue * (decimal)DiscountRate;
         }
@@ -37,7 +37,7 @@ namespace Market_Store
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.AppendLine($"Purchase value: {this.PurchaseValue}"
+            sb.AppendLine($"Purchase value: ${this.PurchaseValue}"
                           + Environment.NewLine
                           + $"Discount rate: {this.DiscountRate * 100:F1}%"
                           + Environment.NewLine

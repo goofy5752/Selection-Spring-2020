@@ -1,16 +1,51 @@
-﻿namespace Market_Store
+﻿// ReSharper disable VirtualMemberCallInConstructor
+namespace Market_Store
 {
     using System;
-    using System.Collections.Generic;
+    using System.Text;
 
-    public class PayDesk
+    public abstract class PayDesk
     {
-        public static void PrintCards(List<BaseCard> cards)
+        protected PayDesk(decimal turnOver, decimal purchaseValue)
         {
-            foreach (var card in cards)
-            {
-                Console.WriteLine(card);
-            }
+            this.TurnOver = turnOver;
+            this.PurchaseValue = purchaseValue;
+            this.CalculateDiscountRate();
+            this.CalculateDiscount();
+        }
+
+        protected decimal TurnOver { get; set; }
+
+        protected decimal PurchaseValue { get; set; }
+
+        protected double DiscountRate { get; set; }
+
+        protected decimal Discount { get; set; }
+
+        protected abstract void CalculateDiscountRate();
+
+        private void CalculateDiscount()
+        {
+            Discount = PurchaseValue * (decimal)DiscountRate;
+        }
+
+        private decimal TotalPrice()
+        {
+            return PurchaseValue - Discount;
+        }
+
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            sb.AppendLine($"Purchase value: ${this.PurchaseValue}"
+                          + Environment.NewLine
+                          + $"Discount rate: {this.DiscountRate * 100:F1}%"
+                          + Environment.NewLine
+                          + $"Discount: ${this.Discount:F2}"
+                          + Environment.NewLine
+                          + $"Total: ${TotalPrice():F2}");
+
+            return sb.ToString();
         }
     }
 }

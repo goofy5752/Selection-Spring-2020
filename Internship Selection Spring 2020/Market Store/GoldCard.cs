@@ -2,7 +2,7 @@
 {
     using System;
 
-    public class GoldCard : BaseCard
+    public class GoldCard : PayDesk
     {
         public GoldCard(decimal turnOver, decimal purchaseValue) : base(turnOver, purchaseValue)
         {

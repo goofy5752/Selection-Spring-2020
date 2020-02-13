@@ -1,6 +1,6 @@
 ﻿namespace Market_Store
 {
-    public class BronzeCard : BaseCard
+    public class BronzeCard : PayDesk
     {
         public BronzeCard(decimal turnOver, decimal purchaseValue) : base(turnOver, purchaseValue)
         {

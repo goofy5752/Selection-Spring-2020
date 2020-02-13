@@ -10,14 +10,14 @@
             var silverCard = new SilverCard(600, 850);
             var goldCard = new GoldCard(1500, 1300);
 
-            var cards = new List<BaseCard>()
+            var cards = new List<PayDesk>()
             {
                 bronzeCard,
                 silverCard,
                 goldCard
             };
 
-            PayDesk.PrintCards(cards);
+            Result.PrintCardInfo(cards);
         }
     }
 }
